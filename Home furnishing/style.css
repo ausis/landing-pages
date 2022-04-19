@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.428),rgba(0, 0, 0, 0.462)), url("./bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* position: relative; */
+}
+/* Utility classes */
+.container {
+    width: 85%;
+    margin: auto;
+}
+.aligncenter {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6em;
+}
+.navbar .logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(205, 202, 202);
+    text-transform: uppercase;
+}
+
+.menu-items {
+    display: flex;
+}
+.menu-items  li {
+    list-style-type: none;
+    padding: 1.4em;
+    /* position: relative; */
+    
+}
+.menu-items  li a {
+    text-decoration: none;
+    
+    padding-bottom: 3px;
+    color: rgba(255, 255, 255, 0.716);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+
+.menu-items li a:hover {
+    color: rgba(152, 231, 152, 0.664);
+    border-bottom: 3px solid rgba(152, 231, 152, 0.664) ;
+}
+.main {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+
+}
+.main .main-heading {
+color: #fff;
+font-weight: 700;
+font-size: 6rem;
+z-index: 1;
+text-transform: uppercase;
+}
+.main > p{
+color: rgba(230, 221, 221, 0.859);
+font-size: 1.3rem;
+margin-bottom: 5em;
+}
+.main .btn1{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid rgba(152, 231, 152, 0.664);
+    border-radius: 25px;
+    font-size: 2rem;
+    margin: 10px;
+    padding: 5px 15px 10px ;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .btn1 span{
+    width: 0;
+    height: 100%;
+    background-color: rgba(152, 231, 152, 0.664);
+    position: absolute;
+    border-radius: 25px;
+    left: 0;
+    bottom: 0;
+    z-index: -1 ;
+}
+.main .btn1:hover span {
+    width: 100%;
+    /* background-color: red; */
+}
+.main .btn1:hover {
+    border: none;
+}
